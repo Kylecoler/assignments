@@ -1,0 +1,23 @@
+body{
+    background-color: #111111;
+    cursor: default;
+}
+
+h1{
+    color: #E2E80F;
+}
+
+p{
+    color: #eeeeee;
+}
+/* class = . id = # */
+.credits{
+    text-decoration: underline;
+    color: #49DAFF;
+    cursor: pointer;
+}
+
+#film-description{
+    font-size: 15px;
+    font-style: italic;
+}

@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    background-image: url("paper.jpeg");
+    background-size: contain; 
+}
+
+h1{
+    font-size: 120px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: initial;
+    outline: 5px;
+    outline-color: brown;
+    outline-style: groove;
+}
+
+article{
+    vertical-align: text-top;
+}
+
+.front, .head{
+    display: inline-block;
+    width: 30%;
+}
+img{
+    width: 100%;
+}
+
+span{
+    color: rgb(72, 19, 196);
+}
+
+#pink{
+    color:rgb(233, 128, 146);
+}
+
+.jobs{
+    display:flex;
+    height: 200px;
+}
+
+.jobs > article{
+    color: blue;
+    margin: 10px;
+}
