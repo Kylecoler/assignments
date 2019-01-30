@@ -3,7 +3,10 @@
 
 var huh = {
     name: 'bob',
-    age: 20,
+    DOB: 1970,
+    age: function (){
+        return ((new Date()).getFullYear() - huh.DOB)
+    },
     weight: 237,
     height: 5.583,
     hobbies: ['kite flying', 'cycleing', 'swimming'],
@@ -62,6 +65,8 @@ huh.gamesmade[0].pieces[huh.gamesmade[0].pieces.length] = "pawn"
 
 huh.hobbies[huh.hobbies.length] = "hiking"
 
-console.log(huh)
-console.log(huh.gamesmade[0].pieces)
-console.log(huh.hobbies)
+// console.log(huh)
+// console.log(huh.gamesmade[0].pieces)
+// console.log(huh.hobbies)
+console.log(((new Date()).getFullYear() - huh.DOB))
+console.log(huh.age())
