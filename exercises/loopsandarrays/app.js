@@ -88,18 +88,19 @@
  // "The light is on"
    // "The light is on"
       // "The light is off"
-var lightState = false
+
 
 function light(switches){
     for(var i = 0; i < switches.length; i++ ){
-        switches[i]%2 === 0
-        lightState = !lightState
-        console.log(lightState)
-        return(lightState)
+        var lightState = false
+        if (switches[i]%2 !== 0){
+            lightState = !lightState}
+            // console.log(lightState)
     }
+    return(lightState)
 }
 
 
-console.log(light([2, 5, 435, 4, 3]))
-console.log(light([1, 1, 1, 1, 3]))
-console.log(light([9, 3, 4, 2]))
+console.log(light([2, 5, 435, 4, 3]));
+console.log(light([1, 1, 1, 1, 3]));
+console.log(light([9, 3, 4, 2]));

@@ -1,12 +1,22 @@
-document.getElementById("redbox").addEventListener('mouseover', function(){
-    
-    // make box blue
+var box = document.getElementById("redbox")
+
+box.addEventListener("mouseenter" ,function(){
+    box.style.backgroundColor = "blue"
+})
+event.keycode
+
+box.addEventListener("mousedown", function(){
+    box.style.backgroundColor = "red"
 })
 
-// clickheld red
+box.addEventListener("dblclick", function(){
+    box.style.backgroundColor = "green"
+})
 
-// clickrelease yellow
+box.addEventListener("mouseup", function(){
+    box.style.backgroundColor = "yellow"
+})
 
-// double click green
-
-// orange scroll anywhere on window
+window.addEventListener("wheel", function(){
+    box.style.backgroundColor = "orange"
+})
