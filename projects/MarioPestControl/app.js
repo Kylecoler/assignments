@@ -1,22 +1,25 @@
-var goomba = document.getElementById("goomba").value;
+var goomba = document.getElementById("goomba")
+var bobomb = document.getElementById("bob-omb")
+var cheep = document.getElementById("cheep")
 
-document.getElementById("goomba").onchange(function(){
-    document.getElementById("ggone").innerHTML += `${goomba*5}`
+goomba.addEventListener("change",function gommbakilled(){
+        document.getElementById("ggone").innerHTML = (
+            goomba.value *5)
 })
 
+bobomb.addEventListener("change",function bobombkilled(){
+        document.getElementById("bgone").innerHTML = (
+            bobomb.value * 7)
+})
 
+cheep.addEventListener("change", function bobombkilled(){
+        document.getElementById("cgone").innerHTML = (
+            cheep.value * 11)
+})
 
-
-// document.getElementById("goomba").addEventListener("change", function(){
-//     document.getElementById("ggone").innerHTML += goomba * 5}
-// )
-
-// document.getElementById("bob-omb").addEventListener("change"){
-//     document.getElementById("bgone").innerHTML += "bob-omb" *7
-// }
-
-// document.getElementById("cheep").addEventListener("change"){
-//     document.getElementById("cgone").innerHTML += "cheep" * 11
-// }
-
-// "ggone" + "bgone" + "cgone" = "total"
+window.addEventListener("change",
+    function(){
+        (document.getElementById("total").innerHTML = (
+            (goomba.value * 5)+(bobomb.value*7)+(cheep.value*11)
+        ))
+})

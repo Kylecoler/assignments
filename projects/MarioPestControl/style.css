@@ -1,8 +1,26 @@
 .inline-block{
     display: inline-block;
     width:30%;
+    text-align: center;
 }
 
 body{
     background-color: skyblue;
+}
+
+.green{
+    background-color: forestgreen;
+}
+
+.black{
+    background-color: midnightblue;
+}
+
+.sea{
+    background-color: aqua;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    width:100%;
 }
