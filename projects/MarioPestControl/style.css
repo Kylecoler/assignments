@@ -10,10 +10,12 @@ body{
 
 .green{
     background-color: forestgreen;
+    
 }
 
 .black{
     background-color: midnightblue;
+    color: gold;
 }
 
 .sea{
