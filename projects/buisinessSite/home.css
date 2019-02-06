@@ -1,0 +1,37 @@
+body{
+    background: url(brain.jpg) top no-repeat #020027;
+    min-width: 540px;
+    color: #c35cd2;
+}
+nav{
+     text-align: center;
+     right: 50%;
+     display: flex;
+     justify-content: space-around;
+     background-color: rgba(137, 43, 226, 0.5);
+     font-size: 30px;
+}
+#nav{
+    position: fixed;
+    width:100%;
+}
+
+header{
+    height: 460px;
+    padding: 20px;
+}
+
+h1{
+    min-width: 540px;
+    text-align:center;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+a{
+    color:yellow;
+}
