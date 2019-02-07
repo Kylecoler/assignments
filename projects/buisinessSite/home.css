@@ -35,3 +35,22 @@ p{
 a{
     color:yellow;
 }
+.dropdown{
+    display:none;
+}
+@media(max-width: 500px){
+    #nav{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+
+    }
+    .drop{
+        display: none;
+    }
+    .show{
+        display:block;
+    }
+
+}

@@ -11,12 +11,23 @@
 <body>
     <div id="nav">
         <nav>
+
             <div><a href="home.html">Home</a></div>
             <div><a href="about.html">About</a></div>
             <div><a href="contact.html">Contact</a></div>
             <div><a href="logIn.html">Log In</a></div>
             <div><a href="jobs.html">Jobs</a></div>
         </nav>
+    </div>
+    <div class="dropdown">
+        <img src="hamburger.png" alt="" class="dropbtn" onclick="hamburger()">
+        <div class="drop" id="dropdown">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="logIn.html">Log In</a>
+            <a href="jobs.html">Jobs</a>
+        </div>
     </div>
     <div class="job">
         <p>here at real thought we have an endless need for all career types.</p>
@@ -32,6 +43,6 @@
         </ul>
         <input type="button" value="Apply">
     </form>
-    <script src=""></script>    
+    <script src="app.js"></script>    
 </body>
 </html>

@@ -10,7 +10,6 @@ nav{
    position: fixed;
    width:100%;
 }
-
 body{
    background-color: #020027;
    color: #c35cd2;
@@ -21,4 +20,23 @@ a{
 .job{
     margin: 0px;
     padding-top: 30px;
+}
+.dropdown{
+    display:none;
+}
+@media(max-width: 500px){
+    #nav{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+
+    }
+    .drop{
+        display: none;
+    }
+    .show{
+        display:block;
+    }
+
 }

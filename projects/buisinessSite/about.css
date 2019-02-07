@@ -24,3 +24,22 @@ a{
     padding-top:80px;
     margin: 0;
  }
+ .dropdown{
+    display:none;
+}
+@media(max-width: 500px){
+    #nav{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+
+    }
+    .drop{
+        display: none;
+    }
+    .show{
+        display:block;
+    }
+
+}
