@@ -59,7 +59,7 @@ function keypressing(){
             return false;
         }
     }
-    if(bughealth < 0){
+    if(bughealth <= 0){
         console.log("You have succesfully fixed the bug.")
         sanity += (Math.floor(Math.random()*20)+10)
         tools.push(rewards[Math.floor(Math.random()*10)])
