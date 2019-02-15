@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'verdemoderna';
+    src:url('verdemoderna.woff') format('woff')
+}
+
+footer{
+    font-family: 'verdemoderna';
+    font-size: 40px
+}
+
+span{
+    font-style: italic
+}
