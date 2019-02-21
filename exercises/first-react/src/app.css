@@ -1,0 +1,10 @@
+.nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
+    background: blue;
+}
+
+.head{
+    height: 200px;
+    text-align: center;
+}
