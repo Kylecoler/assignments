@@ -4,14 +4,15 @@ import Box from "./Box"
 const App = () => {
     const styles = {
         display: "grid",
-        gridTemplateColumns: "repeat(5,1fr)"
+        gridTemplateColumns: "repeat(auto-fit,minmax(200px, 1fr))",
+        gridGap: "5px"
     }
 
     return(
         <div style={styles}>
            <Box 
             color="red" 
-            title="2"
+            title="2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 2,"
             subtitle="3"
             info="1" /> 
             <Box

@@ -3,7 +3,8 @@ import React from "react";
 const Box = (props) => {
     const styles = {
         background: props.color,
-        width: "200px"
+        width: "200px",
+        border: "solid black 3px"
     }
     return(
         <div style={styles}>
