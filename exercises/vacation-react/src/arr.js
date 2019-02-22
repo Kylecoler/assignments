@@ -1,3 +1,5 @@
+import React from 'react'
+
 let Arr = [
     {
       place: "Meridian, Idaho",

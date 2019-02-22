@@ -2,7 +2,7 @@ import React from 'react';
 import Arr from "./arr"
 
 const App = () => {
-    const vacspot = Arr.map(spot => {
+    const vacspot = Arr.map((spot, i) => {
             
 
         const style1 = {
@@ -31,7 +31,7 @@ const App = () => {
 
 
         return (
-            <div style={style1}>
+            <div style={style1} key={i+spot.place}>
                 <h1>{spot.place}</h1>
                 <h3>Best time to see: {spot.timeToGo}</h3>
                 <p>Cost: {cosst()}{spot.price}</p>
