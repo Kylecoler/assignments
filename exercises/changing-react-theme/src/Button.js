@@ -8,21 +8,21 @@ class Switch extends Component{
             theme: true
         }
     }
-    Switcher = () =>{
+    switcher = () =>{
         this.setState(prevState => ({theme: !prevState.theme}))
     }
     render(){
         const Comp = this.props.component;
         return (
-            <Comp on={this.state.theme} toggle={this.Switcher}{...this.props}/>
+            <Comp theme={this.state.theme} switcher={this.switcher}{...this.props}/>
         )
     }
 }
 
-export default Switch
+export default Switch;
 
 export function themeSwitch(C){
     return function (props){
-        <Switch component={C}{...props}/>
+        return <Switch component={C}{...props}/>
     }
 }

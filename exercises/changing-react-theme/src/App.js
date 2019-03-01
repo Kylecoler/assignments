@@ -3,12 +3,15 @@ import {themeSwitch} from './Button'
 import Body from './Body'
 import Header from './Header'
 import Footer from './Footer'
+import './App.css'
 
-const App = ({Switcher})=>{
+const App = ({switcher, theme})=>{
+    console.log(switcher)
     return(
-        <div className="">
+        <div className={theme ? "light" : "dark"}>
+        {/* <div className="light"> */}
             <Header/>
-            <button onClick={Switcher}></button>
+            <button onClick={switcher}>Theme</button>
             <Body/>
             <Footer/>
         </div>
