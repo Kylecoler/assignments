@@ -1,0 +1,24 @@
+body{
+    margin:0px;
+    background: rgb(30 30 30);
+    color:white;
+}
+
+.link{
+    background:grey;
+    color:white;
+    font-size:20pt;
+    display:block;
+}
+
+.link1{
+    color:white;
+}
+
+.link:hover{
+    color: rgb(03 76 119)
+}
+
+.link1:hover{
+    color: rgb(03 76 119)
+}
