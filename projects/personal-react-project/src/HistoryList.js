@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Axios from 'axios'
-import HistoryDisplay from './HistoryDisplay'
+import HistoryDisplay from './Dragonsdisplay'
 
 class HistoryList extends Component{
     constructor(){
@@ -20,7 +20,7 @@ class HistoryList extends Component{
 
     render(){
         const history = this.state.arr.map(item=>{
-                return <HistoryDisplay title={item.title}/>
+                return <HistoryDisplay name={item.title}/>
             })
 
         return history
