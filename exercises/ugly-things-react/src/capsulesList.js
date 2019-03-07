@@ -15,7 +15,6 @@ class SpaceX extends Component{
             this.setState( ()=>{
                 return {list: res.data}
             })
-            console.log(this.state.list)
         })
     }
     

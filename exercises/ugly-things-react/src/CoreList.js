@@ -21,9 +21,8 @@ class CoreList extends Component{
     render(){
         const core = this.state.arr.map(aCore=>{
                 return <Core core_serial={aCore.core_serial}/>
-            })
-            return core
-            // return <div>hello</div>
+        })
+        return core
     }
 }
 
