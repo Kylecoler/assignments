@@ -2,12 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 const SideBar = ()=>{
-    const style ={
-        background:"grey",
-        color:"white",
-        fontSize:"20pt",
-        display:"block"
-    }
+
     const Style={
         display:"inline-block"
     }

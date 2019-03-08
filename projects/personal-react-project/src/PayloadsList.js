@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Axios from 'axios'
-import PayloadsDisplay from './PayloadsDisplay'
+import PayloadsDisplay from './Dragonsdisplay'
 
 class PayloadsList extends Component{
     constructor(){

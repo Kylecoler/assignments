@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Axios from 'axios'
-import LaunchPadsDisplay from './LandingPadsDisplay'
+import LaunchPadsDisplay from './Dragonsdisplay'
 
 class LaunchPadsList extends Component{
     constructor(){

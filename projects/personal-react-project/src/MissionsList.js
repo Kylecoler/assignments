@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Axios from 'axios'
-import MissionDisplay from './MissionDisplay'
+import MissionDisplay from './Dragonsdisplay'
 
 class MissionList extends Component{
     constructor(){
