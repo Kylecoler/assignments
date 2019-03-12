@@ -14,6 +14,7 @@ import PayloadsList from './PayloadsList'
 import RocketsList from './RocketsList'
 import RoadsterList from './RoadsterList'
 import ShipList from './ShipList'
+import Capsuledata from './capsuledatadisplay';
 
 const ListOfEverything = () =>{
     return(
@@ -34,6 +35,7 @@ const ListOfEverything = () =>{
                 <Route path='/ListOfEverything/RocketsList' component={RocketsList}/>
                 <Route path='/ListOfEverything/RoadsterList' component={RoadsterList}/>
                 <Route path='/ListOfEverything/ShipsList' component={ShipList}/>
+                <Route path="/listOfEverything/:id" component={Capsuledata}/>
             </Switch>
             </div>
         </div>

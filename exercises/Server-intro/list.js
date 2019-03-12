@@ -1,0 +1,14 @@
+module.exports=[
+    {
+        name:"Bob",
+        age:20
+    },
+    {
+        name:"Charlie",
+        age:24
+    },
+    {
+        name:"Abhi",
+        age:22
+    }
+]
