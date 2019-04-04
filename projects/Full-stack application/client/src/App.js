@@ -1,28 +1,56 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+const App = ()=>{
+    const today = new Date()
+    // const year = today.getFullYear()
+    // const month = today.getMonth()
+    // const monthList=['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    const startDate = today.getDate()
+    //step one make rows
+    //step two fill rows with cells
+    const rows = []
+    const body = ()=>{
+        let date = 1
+        for(let i = 0;i<6;i++){
+            const dates = []
+            for(let j=0;j<7;j++){
+                dates.push(<td>{date}</td>)
+                date++
+                console.log(rows)
+            }
+            rows.push(<tr>{
+                dates.map(day=>{
+                    return(day)
+                })
+            }</tr>)
+
+        }
+    }
+
+    body()
+    return(
+        <div>
+            {startDate}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thur</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {rows.map(row=>{
+                        return row
+                    })}
+                </tbody>
+            </table>
+        </div>
+    )
 }
 
-export default App;
+export default App
