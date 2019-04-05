@@ -12,9 +12,13 @@ class Calender extends Component{
     rows = []
     monthArr = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     monthChange = (e)=>{
-        // e.preventDefault()
-        console.log(e.target.name)
         this.setState({[e.target.name]: e.target.value})
+    }
+
+    addEvent = (num)=>{
+        return()=>{
+            alert(this.monthArr[this.state.month]+" "+num+" "+this.state.year)
+        }
     }
 
     body = (year, month)=>{
@@ -29,7 +33,7 @@ class Calender extends Component{
                 } else if(date > end){
                     break
                 } else {
-                    dates.push(<td key={i+j}>{date}</td>)
+                    dates.push(<td key={i+j} onClick={this.addEvent(date)}>{date}</td>)
                     date++
                 }
             }
@@ -40,9 +44,10 @@ class Calender extends Component{
             }</tr>)
         }
     }
+
     render(){
         this.body(this.state.year, this.state.month)
-        const h = ()=>{
+        const display = ()=>{
             const tr = (this.rows.map(row=>row))
             this.rows=[]
             return tr
@@ -63,7 +68,7 @@ class Calender extends Component{
                         </tr>
                     </thead>
                     <tbody>
-                        {h()}
+                        {display()}
                     </tbody>
                 </table>
                 <form action="" onChange={this.monthChange}>
