@@ -3,16 +3,20 @@ import Calender from './calendar'
 import Navbar from './navbar'
 import Login from './login'
 import Signup from './signup'
+import Events from './events'
 import {Switch, Route} from 'react-router-dom'
+import Protectroute from './protectroute'
 
 const App = ()=>{
+
     return(
-        <div>
+         <div>
             <Navbar/>
             <Switch>
-                <Route path='/login' component={Login}/>
+                <Route exact path='/' component={Login}/>
                 <Route path='/signup' component={Signup}/>
-                <Route path='/calendar' component={Calender}/>
+                <Protectroute path='/calendar' component={Calender}/>
+                <Protectroute path='/events' component={Events}/>
             </Switch>
         </div>
     )
