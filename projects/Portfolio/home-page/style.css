@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+    background: url(http://eskipaper.com/images/background-patterns-11.jpg) black
+}
+
+h1{
+    margin-top: 7%;
+    color:rgb(241, 189, 1)
+}
+
+a{
+    color:rgb(241, 189, 1);
+    text-decoration: none
+}
+
+.scene{
+    width: 200pt;
+    height: 200pt;
+    perspective: 600pt;
+    margin:auto;
+    margin-top:100pt;
+}
+
+.cube{
+    width:100%;
+    height:100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100pt);
+    animation: rotate 10s linear 0s infinite normal none;
+}
+
+.face{
+    position: absolute;
+    width:200pt;
+    height: 200pt;
+    border: solid white 2pt;
+}
+
+.front{transform: rotateY(0deg) translateZ(100pt);}
+.right{transform: rotateY(90deg) translateZ(100pt);}
+.back{transform: rotateY(180deg) translateZ(100pt);}
+.left{transform: rotateY(-90deg) translateZ(100pt);}
+.top{transform: rotateX(90deg) translateZ(100pt);}
+.bottom{transform: rotateX(-90deg) translateZ(100pt);}
+
+@keyframes rotate{
+    from{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)}
+    to{transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
+}
