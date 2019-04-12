@@ -8,17 +8,20 @@ h1{
     color:rgb(241, 189, 1)
 }
 
-a{
-    color:rgb(241, 189, 1);
-    text-decoration: none
-}
-
 .scene{
     width: 200pt;
     height: 200pt;
     perspective: 600pt;
     margin:auto;
     margin-top:100pt;
+}
+
+.center{
+    position: absolute;
+    line-height: 200pt;
+    width:100%;
+    color:white;
+    text-decoration: none;
 }
 
 .cube{
