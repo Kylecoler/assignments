@@ -4,8 +4,11 @@ main{
 }
 
 footer{
+    width:100%;
     position: fixed;
     bottom:0pt;
+    display: flex;
+    justify-content: space-around;
 }
 
 .projectCards{
@@ -29,7 +32,9 @@ body{
 
 header img{
     display: block;
-    margin: auto;   
+    margin: auto;
+    border-radius: 20pt;
+    box-shadow: 0pt 0pt 20pt lime   
 }
 
 nav a{
