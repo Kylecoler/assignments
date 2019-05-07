@@ -1,14 +1,3 @@
-.japan{
-    width:500pt;
-    height:300pt;
-    background: black
-}
-
-.germany{
-    width:500pt;
-    height:300pt;
-    background: pink
-}
 
 .main{
     display: grid;
@@ -17,4 +6,314 @@
 
 body{
     background:rgb(48, 64, 216)
+}
+
+.inlineblock{
+    display:inline-block
+}
+
+.flag{
+    width:600pt;
+    height:400pt;
+    display: inline-block;
+    margin: 2px;
+    position: relative;
+}
+
+.relative{
+    position: relative;
+}
+
+.square{
+    width:200px;
+    height:200px;
+    display: inline-block;
+    margin:2px;
+}
+
+.corner{
+    width:40%;
+    height:50%;
+    vertical-align: top;
+}
+
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}    
+
+.offset{
+    margin: 0;
+    position:absolute;
+    top:50%;
+    left:56%;
+    transform: translate(-50%, -50%)
+}
+
+.circle{
+    border-radius:50%;
+    border:solid rgba(0, 0, 0, 0);
+    width: 100px;
+    height: 100px; 
+}
+
+.circle2{
+    border-radius:50%;
+    border: solid rgba(0,0,0,0);
+    width:50px;
+    height:50px;
+}
+
+.circle3{
+    border-radius:50%;
+    border: solid rgba(0,0,0,0);
+    width:75px;
+    height:75px;
+}
+
+.circle4{
+    border-radius:50%;
+    border: solid rgba(0,0,0,0);
+    width:150px;
+    height:150px;
+}
+
+.circle5{
+    border-radius:50%;
+    border:solid rgb(97, 36, 1) 2px;
+    width:125px;
+    height:125px;
+}
+
+.circle6{
+    border-radius:50%;
+    border:solid rgba(0,0,0,0);
+    width:15px;
+    height:15px;
+}
+
+.width100{
+    width:100%;
+}
+
+.width60{
+    width:66.6%;
+}
+
+.width42{
+    width:41.6%;
+}
+
+.width49{
+    width:49.9%;
+}
+
+.width30{
+    width:33.3%;
+}
+
+.width16{
+    width:16.65%
+}
+
+.height100{
+    height:100%;
+}
+
+.height50{
+    height:50%;
+}
+
+.height42{
+    height:41.6%;
+}
+
+.height30{
+    height:33.3%;
+}
+
+.height20{
+    height:20%;
+}
+
+.height16{
+    height:16.6%;
+}
+
+.height12{
+    height:12.5%;
+}
+
+.top{
+    vertical-align: top;
+}
+
+.red{ 
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.white{
+    background-color: white;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.black{
+    background-color: black;
+}
+
+.green{
+    background-color: green;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.border{
+    border-top:10px solid white;
+    border-bottom: 10px solid white;
+}
+
+.border1{
+    border-top:20px solid red;
+    border-bottom:20px solid red;
+}
+
+.petal{
+    position: absolute;
+    transform: translate(-0px, -12px);
+}
+
+.rotate{
+    position: absolute;
+    transform:translate(+2px, -11px) rotate(130deg) ;
+}
+
+.leaf1{
+    position: absolute;
+    transform: translate(+14px,+2px) rotate(-0deg) ;
+}
+
+.leaf2{
+    position: absolute;
+    transform: translate(+29px,-4px) rotate(-5deg) ;
+}
+
+.leaf3{
+    position: absolute;
+    transform: translate(+45px,-8px) rotate(+5deg) ;
+}
+
+.leaf4{
+    position: absolute;
+    transform: translate(+65px,-8px) rotate(+45deg) ;
+}
+
+.leaf5{
+    position: absolute;
+    transform: translate(+83px,-3px) rotate(+60deg) ;
+}
+
+.leaf6{
+    position: absolute;
+    transform: translate(+99px,+10px) rotate(+78deg) ;
+}
+
+.leaf7{
+    position: absolute;
+    transform: translate(+110px,+23px) rotate(+75deg) ;
+}
+
+.leaf8{
+    position: absolute;
+    transform: translate(+115px,+40px) rotate(+100deg) ;
+}
+
+.leaf9{
+    position: absolute;
+    transform: translate(+115px,+57px) rotate(+110deg) ;
+}
+
+.leaf10{
+    position: absolute;
+    transform: translate(+113px,+74px) rotate(+120deg) ;
+}
+
+.leaf11{
+    position: absolute;
+    transform: translate(+104px,+90px) rotate(+135deg) ;
+}
+
+.leaf12{
+    position: absolute;
+    transform: translate(+91px,+102px) rotate(+150deg) ;
+}
+
+.leaf13{
+    position: absolute;
+    transform: translate(+75px,+110px) rotate(+175deg) ;
+}
+
+.leaf14{
+    position: absolute;
+    transform: translate(+58px,+114px) rotate(-175deg) ;
+}
+
+.leaf15{
+    position: absolute;
+    transform: translate(+40px,+113px) rotate(-145deg) ;
+}
+
+.leaf16{
+    position: absolute;
+    transform: translate(+24px,+107px) rotate(-135deg) ;
+}
+
+.leaf17{
+    position: absolute;
+    transform: translate(+10px,+98px) rotate(-125deg) ;
+}
+
+.leaf18{
+    position: absolute;
+    transform: translate(+0px,+83px) rotate(-100deg) ;
+}
+
+.leaf19{
+    position: absolute;
+    transform: translate(-8px,+66px) rotate(-75deg) ;
+}
+
+.leaf20{
+    position: absolute;
+    transform: translate(-10px,+49px) rotate(-65deg) ;
+}
+
+.leaf21{
+    position: absolute;
+    transform: translate(-8px,+33px) rotate(-55deg) ;
+}
+
+.leaf22{
+    position: absolute;
+    transform: translate(+3px,+15px) rotate(-25deg) ;
+}
+
+.shield{
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    border-radius: 0% 0% 100% 100%;
+    border: 1px black solid;
+    transform: translate(100%, 70%)
 }
