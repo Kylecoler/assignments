@@ -1,13 +1,19 @@
 import React from 'react'
 import Nav from './nav'
+import {withSelect} from './select'
+import './style.css'
 
-const Flag = ()=>{
+const Flag = ({setIndex, index})=>{
+    const flags = [
+        <div className="japan">can u see this</div>, 
+        <div className="germany">something else</div>
+    ]
     return(
-        <div>
+        <div className='main'>
             <Nav/>
-            hi
+            {flags[index]}
         </div>
     )
 }
 
-export default Flag
+export default withSelect(Flag)

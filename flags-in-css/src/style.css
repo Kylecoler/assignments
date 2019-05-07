@@ -1,0 +1,20 @@
+.japan{
+    width:500pt;
+    height:300pt;
+    background: black
+}
+
+.germany{
+    width:500pt;
+    height:300pt;
+    background: pink
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+body{
+    background:rgb(48, 64, 216)
+}
