@@ -5,7 +5,7 @@ class Flag extends Component{
     constructor(){
         super()
         this.state={
-            index:1
+            index:11
         }
     }
 
