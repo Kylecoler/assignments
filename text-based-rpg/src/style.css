@@ -17,3 +17,20 @@ img{
     float: left;
     margin: 0 4% 0 2%
 }
+
+.gameCard{
+    width:250pt;
+    height:300pt;
+    text-align: center;
+    border: dashed 2pt white;
+}
+
+.gameCard, .gameLink{
+    text-decoration: none;
+    color:green;
+}
+
+.gameCard, img{
+    /* display:block; */
+    float:none;
+}
