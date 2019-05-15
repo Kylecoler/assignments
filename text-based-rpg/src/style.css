@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    border-bottom: 5pt green dashed
 }
 
 body{
@@ -25,12 +26,32 @@ img{
     border: dashed 2pt white;
 }
 
-.gameCard, .gameLink{
+.gameCard .gameLink{
     text-decoration: none;
     color:green;
 }
 
-.gameCard, img{
+.gameCard img{
     /* display:block; */
     float:none;
+}
+
+.gameContainer{
+    margin:10pt;
+    text-align: center;
+    font-size: 30pt;
+    margin-top:10%
+}
+
+.input{
+    background:black;
+    color:green;
+    height:30pt;
+    width:200pt;
+    font-size: 20pt
+}
+
+.submit{
+    background:black;
+    color:green;
 }
