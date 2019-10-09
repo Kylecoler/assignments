@@ -19,7 +19,7 @@ class Game1 extends Component{
                 let newName = this.state.userInput.charAt(0).toUpperCase() + this.state.userInput.slice(1).toLowerCase()
                 return{name:newName,
                         text:`Greetings ${newName}, our village has been raided by undead will you help us,  
-                             Yes or No? Your default options are Inventory and Quit.`,
+                             Yes or No?`,
                         userInput:''
                 }
             })
@@ -45,6 +45,9 @@ class Game1 extends Component{
             switch(this.state.path){
                 case '0a':
                     this.path0a()
+                    break
+                case '0b':
+                    this.path0b()
                     break
                 default:
                     this.default()
