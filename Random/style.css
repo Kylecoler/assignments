@@ -1,3 +1,13 @@
 h1{
     text-align: center;
 }
+#animation{
+    height: 100pt;
+    background-color: black;
+}
+.face{
+    width: 80pt;
+    height: 80pt;
+    border: solid blue;
+    display: inline-block;
+}
