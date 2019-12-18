@@ -23,21 +23,23 @@
                 <option value="12">D12</option>
                 <option value="20">D20</option>
             </select>
-            Number of device
+            Number of dice
             <input type="number" name="DiceNum" id="DiceNum" value="1">
             <input type="button" value="Get Randomness" onclick="rndnum()">
         </form>
         <p id='result'></p>
     </div>
-    <div id="animation">
-        <div id="rotate">
-            <div id="1" class="face"></div>
-            <div id="2" class="face"></div>
-            <div id="3" class="face"></div>
-            <div id="4" class="face"></div>
-            <div id="5" class="face"></div>
-            <div id ="6" class="face"></div>
-        </div>
+    <div id='scene'>
+       <div id="animation">
+            <div id="rotate">
+                <div id="front" class="face">1</div>
+                <div id="back" class="face">2</div>
+                <div id="left" class="face">3</div>
+                <div id="right" class="face">4</div>
+                <div id="top" class="face">5</div>
+                <div id ="bottom" class="face">6</div>
+            </div>
+        </div> 
     </div>
 </body>
 </html>
