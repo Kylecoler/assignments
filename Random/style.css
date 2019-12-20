@@ -26,30 +26,31 @@ h1{
     background: cyan;
     font-size: larger;
 }
-#front{
-    transform: rotateY(0deg) translateZ(20pt);
-}
-#back{
-    transform: rotateY(180deg) translateZ(20pt);
-}
-#left{
-    transform: rotateY(90deg) translateZ(20pt);
-}
-#right{
-    transform: rotateY(270deg) translateZ(20pt);
-}
-#top{
-    transform: rotateX(90deg) translateZ(20pt);
-}
-#bottom{
-    transform: rotateX(270deg) translateZ(20pt);
-}
+#front{transform: rotateY(0deg) translateZ(20pt);}
+#back{transform: rotateY(180deg) translateZ(20pt);}
+#left{transform: rotateY(90deg) translateZ(20pt);}
+#right{transform: rotateY(270deg) translateZ(20pt);}
+#top{transform: rotateX(90deg) translateZ(20pt);}
+#bottom{transform: rotateX(270deg) translateZ(20pt);}
 
 @keyframes rotate{
     from{transform: rotateX(45deg) rotateY(45deg) rotateZ(0deg)}
     to{transform: rotateX(405deg) rotateY(405deg) rotateZ(360deg);}
 }
 
+#d4scene{
+    width:40pt;
+    height: 40pt;
+    perspective: 500pt;
+    display:inline;
+}
+#d4animation{
+    width:100%;
+    height:100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-50pt);
+}
 .d4face{
     position: absolute;
     width:0pt;
@@ -58,4 +59,17 @@ h1{
     border-bottom: solid black 40pt;
     border-left: 34.6pt solid transparent;
     border-right: 34.6pt solid transparent;
+}
+
+.a4{
+    transform:rotateX(0deg) rotateY(120deg);
+}
+.b4{
+    transform:rotateX(0deg) rotateY(240deg);
+}
+.c4{
+    transform:rotateX(0deg) rotateY(0deg);
+}
+.d4{
+    transform:rotateX(-90deg) rotateY(0deg);
 }
