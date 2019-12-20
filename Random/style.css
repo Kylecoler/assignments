@@ -49,3 +49,13 @@ h1{
     from{transform: rotateX(45deg) rotateY(45deg) rotateZ(0deg)}
     to{transform: rotateX(405deg) rotateY(405deg) rotateZ(360deg);}
 }
+
+.d4face{
+    position: absolute;
+    width:0pt;
+    height:0pt;
+    border-top: 0pt;
+    border-bottom: solid black 40pt;
+    border-left: 34.6pt solid transparent;
+    border-right: 34.6pt solid transparent;
+}
