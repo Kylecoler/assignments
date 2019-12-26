@@ -1,12 +1,13 @@
 h1{
     text-align: center;
 }
-#scene{
+#d6scene{
+    position: absolute;
     width:40pt;
     height:40pt;
     perspective: 500pt;
 }
-#animation{
+#d6animation{
     width:100%;
     height: 100%;
     position: relative;
@@ -36,6 +37,7 @@ h1{
     to{transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
 }
 #d4scene{
+    position: absolute;
     width:40pt;
     height:40pt;
     perspective: 500pt;
@@ -58,11 +60,14 @@ h1{
     line-height: 20pt;
     color:white
 }
-.a14{transform: rotateY(0deg) rotateX(18deg) translateZ(5pt)}
-.b14{transform: rotateY(120deg) rotateX(18deg) translateZ(5pt)}
-.c14{transform: rotateY(240deg) rotateX(18deg) translateZ(5pt)}
+.a14{transform: rotateY(0deg) rotateX(15deg) translateZ(5pt)}
+.b14{transform: rotateY(120deg) rotateX(15deg) translateZ(5pt)}
+.c14{transform: rotateY(240deg) rotateX(15deg) translateZ(5pt)}
 .d14{transform: rotateX(90deg) translateZ(-17pt) translateY(-7pt)}
 .d4face p{
     position: absolute;
     left: -4pt;
 }
+
+.hide{visibility: hidden;}
+.dice{position: relative;}
