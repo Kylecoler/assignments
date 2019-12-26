@@ -4,7 +4,7 @@ const rndnum = function(){
     let DieNum = document.getElementById("DiceNum").value
     document.getElementById('d6animation').classList.add('go')
     document.getElementById('d4animation').classList.add('go')
-    setTimeout(reset, 5000)
+    setTimeout(reset, 4500)
     const Result = []
     for (i = 0; i < DieNum; i++){
         Result.push(Math.floor(Math.random() * Math.floor(DieVal))+1)
@@ -14,12 +14,12 @@ const rndnum = function(){
         document.getElementById("d4animation").classList.toggle('hide')
         setTimeout(toggle=()=>{
             document.getElementById('d4animation').classList.toggle('hide')
-        },5000)
+        },4500)
     } else if(DieVal == 6){
         document.getElementById("d6animation").classList.toggle('hide')
         setTimeout(toggle=()=>{
             document.getElementById('d6animation').classList.toggle('hide')
-        },5000)
+        },4500)
     }
 }
 
