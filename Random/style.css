@@ -13,9 +13,7 @@ h1{
     transform-style: preserve-3d;
     transform: translateZ(-100pt);
 }
-.go{
-    animation: rotate 30s infinite forwards;
-}
+.go{animation: rotate 5s infinite forwards;}
 .face{
     width: 39pt;
     height: 39pt;
@@ -37,10 +35,9 @@ h1{
     from{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)}
     to{transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
 }
-
 #d4scene{
     width:40pt;
-    height: 40pt;
+    height:40pt;
     perspective: 500pt;
 }
 #d4animation{
@@ -48,29 +45,24 @@ h1{
     height:100%;
     position: relative;
     transform-style: preserve-3d;
-    /* transform: translateZ(-50pt); */
+    transform: translateZ(-100pt)
 }
 .d4face{
     position: absolute;
-    width:100%;
-    height:100%;
+    width:0pt;
+    height:0pt;
     border-top: 0pt;
-    background: chocolate;
-    border-bottom: solid black 40pt;
-    border-left: 34.6pt solid transparent;
-    transform:translateZ(17.3pt);
-    
+    border-left: solid 20pt transparent;
+    border-bottom: solid 40pt black;
+    border-right: solid 20pt transparent;
+    line-height: 20pt;
+    color:white
 }
-
-.a4{
-    transform:rotateX(0deg) rotateY(120deg);
-}
-.b4{
-    transform:rotateX(0deg) rotateY(240deg);
-}
-.c4{
-    transform:rotateX(0deg) rotateY(0deg);
-}
-.d4{
-    transform:rotateX(-90deg) rotateY(0deg);
+.a14{transform: rotateY(0deg) rotateX(18deg) translateZ(5pt)}
+.b14{transform: rotateY(120deg) rotateX(18deg) translateZ(5pt)}
+.c14{transform: rotateY(240deg) rotateX(18deg) translateZ(5pt)}
+.d14{transform: rotateX(90deg) translateZ(-17pt) translateY(-7pt)}
+.d4face p{
+    position: absolute;
+    left: -4pt;
 }
