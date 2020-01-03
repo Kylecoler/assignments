@@ -8,7 +8,9 @@ h1{
     height:40pt;
     perspective: 500pt;
 }
-#d4animation, #d6animation{
+#d4animation, 
+#d6animation, 
+#d8animation{
     width:100%;
     height: 100%;
     position: relative;
@@ -16,6 +18,16 @@ h1{
     transform: translateZ(-100pt);
 }
 .go{animation: rotate 5s 1 linear forwards;}
+
+@keyframes rotate{
+    from{transform: translateY(-40pt) rotateZ(0deg);}
+    10%{transform: translateY(40pt) rotateZ(180deg);}
+    20%{left: 20pt;transform:rotateX(0deg) rotateY(0deg) rotateZ(360deg);}
+    90%{left:200pt; transform: rotateX(720deg) rotateY(720deg) rotateZ(1180deg);}
+    to{left:200pt; transform: rotateX(720deg) rotateY(720deg) rotateZ(1180deg);}
+}
+
+.hide{visibility: hidden;}
 
 .square{
     width: 39pt;
@@ -34,14 +46,6 @@ h1{
 .e16{transform: rotateX(90deg) translateZ(20pt);}
 .f16{transform: rotateX(270deg) translateZ(20pt);}
 
-@keyframes rotate{
-    from{transform: translateY(-40pt) rotateZ(0deg);}
-    10%{transform: translateY(40pt) rotateZ(180deg);}
-    20%{left: 20pt;transform:rotateX(0deg) rotateY(0deg) rotateZ(360deg);}
-    90%{left:200pt; transform: rotateX(720deg) rotateY(720deg) rotateZ(1180deg);}
-    to{left:200pt; transform: rotateX(720deg) rotateY(720deg) rotateZ(1180deg);}
-}
-
 .triangle{
     position: absolute;
     width:0pt;
@@ -57,9 +61,17 @@ h1{
 .b14{transform: rotateY(120deg) rotateX(15deg) translateZ(5pt)}
 .c14{transform: rotateY(240deg) rotateX(15deg) translateZ(5pt)}
 .d14{transform: rotateX(90deg) translateZ(-17pt) translateY(-7pt)}
-.d4face p{
+
+.triangle p{
     position: absolute;
     left: -4pt;
 }
 
-.hide{visibility: hidden;}
+.a18{transform: rotateY(0deg) translateZ(10pt) rotateX(30deg)}
+.b18{transform: rotateY(90deg) translateZ(10pt) rotateX(30deg)}
+.c18{transform: rotateY(180deg) translateZ(10pt) rotateX(30deg)}
+.d18{transform: rotateY(270deg) translateZ(10pt) rotateX(30deg)}
+.e18{transform: rotateY(0deg) rotateZ(180deg) translateY(-29pt) rotateX(30deg) translateZ(10pt)}
+.f18{transform: rotateY(90deg) rotateZ(180deg) translateY(-29pt) rotateX(30deg) translateZ(10pt)}
+.g18{transform: rotateY(180deg) rotateZ(180deg) translateY(-29pt) rotateX(30deg) translateZ(10pt)}
+.h18{transform: rotateY(270deg) rotateZ(180deg) translateY(-29pt) rotateX(30deg) translateZ(10pt)}
