@@ -4,7 +4,7 @@ const rndnum = function(){
     let DieNum = document.getElementById("DiceNum").value
     document.getElementById('d6animation').classList.add('go')
     document.getElementById('d4animation').classList.add('go')
-    setTimeout(reset, 4500)
+    setTimeout(reset, 5000)
     const Result = []
     for (i = 0; i < DieNum; i++){
         Result.push(Math.floor(Math.random() * Math.floor(DieVal))+1)
