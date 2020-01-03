@@ -27,3 +27,5 @@ reset = function(){
     document.getElementById('d6animation').classList.remove('go')
     document.getElementById('d4animation').classList.remove('go')
 }
+// possibly adding cloned elements
+// add cool D&D background
