@@ -10,7 +10,10 @@ h1{
 }
 #d4animation, 
 #d6animation, 
-#d8animation{
+#d8animation,
+#d10animation,
+#d12animation,
+#d20animation{
     width:100%;
     height: 100%;
     position: relative;
