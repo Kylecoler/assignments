@@ -43,3 +43,18 @@ Test.assertEquals(profitableGamble(0.33, 10, 3.30), true)
 Test.assertEquals(profitableGamble(0, 1000, 0.01), false)
 Test.assertEquals(profitableGamble(0.1, 1000, 7), true)
 Test.assertEquals(profitableGamble(0, 0, 0), false)
+
+// Convert a Number to Base 2
+
+function binary(decimal) {
+	return decimal.toString(2)
+}
+
+Test.assertEquals(binary(100), "1100100")
+Test.assertEquals(binary(1), "1")
+Test.assertEquals(binary(0), "0")
+Test.assertEquals(binary(69), "1000101")
+Test.assertEquals(binary(1023), "1111111111")
+Test.assertEquals(binary(511), "111111111")
+Test.assertEquals(binary(666), "1010011010")
+Test.assertEquals(binary(123), "1111011")
