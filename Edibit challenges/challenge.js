@@ -61,11 +61,9 @@ Test.assertEquals(binary(123), "1111011")
 
 //Add up the Numbers from a Single Number
 
-
 function addUp(num) {
 	return (num*(num +1))/2
 }
-
 
 Test.assertEquals(addUp(4), 10)
 Test.assertEquals(addUp(13), 91)
@@ -82,3 +80,17 @@ Test.assertEquals(addUp(1), 1)
 Test.assertEquals(addUp(999), 499500)
 Test.assertEquals(addUp(175), 15400)
 Test.assertEquals(addUp(111), 6216)
+
+//Are the Numbers Equal?
+
+function isSameNum(num1, num2) {
+	if(num1 === num2){
+		return true
+	}
+	return false
+}
+
+Test.assertEquals(isSameNum(4, 8), false)
+Test.assertEquals(isSameNum(2, 2), true)
+Test.assertEquals(isSameNum(0, 6), false)
+Test.assertEquals(isSameNum(2, "2"), false)
