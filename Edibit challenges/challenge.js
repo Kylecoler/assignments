@@ -94,3 +94,13 @@ Test.assertEquals(isSameNum(4, 8), false)
 Test.assertEquals(isSameNum(2, 2), true)
 Test.assertEquals(isSameNum(0, 6), false)
 Test.assertEquals(isSameNum(2, "2"), false)
+
+//Convert Hours and Minutes into Seconds
+
+function convert(hours, minutes) {
+	return (hours*3600)+(minutes*60)
+}
+
+Test.assertEquals(convert(1, 0), 3600)
+Test.assertEquals(convert(1, 3), 3780)
+Test.assertEquals(convert(0, 30), 1800)
