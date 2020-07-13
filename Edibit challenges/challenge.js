@@ -154,3 +154,16 @@ Test.assertEquals(validString(str), "rest", "You need to use the Rest element.")
 Test.assertEquals(validArray(str), "array", "[1, 2, 3, 4] should remain untouched.")
 Test.assertEquals(head, 1, "head should equal to 1")
 Test.assertSimilar(tail, [2,3,4], "tail should equal to [2, 3, 4]" )
+
+
+
+function returnEven(arr){
+	const arra = []
+	for(i=0;i<arr.length;i++){
+		if(arr[i]%=0){
+			arra.push(arr[i])
+		}
+	}  
+	return (arra)
+}
+console.log(returnEven([1,2,3,4,5,6,7,8,9,10])) // returns [2,4,6,8,10]
