@@ -18,11 +18,15 @@ nav{
 .dropdown{
     position: relative;
     display: inline-block;
+    background:red;
+    border:black 2pt dashed
 }
 
 .dropdown-content{
     display: none;
     position: absolute;
+    background: blue;
+    border: black dotted;
 }
 
 .dropdown-content a{
@@ -31,4 +35,9 @@ nav{
 
 .show{
     display: block;
+}
+
+a{
+    color: black;
+    text-decoration: none;
 }
