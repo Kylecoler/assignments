@@ -4,8 +4,8 @@ function Nav(){
     return(
         <nav>
             <ol>
-                <li>Ryoteck Corporation</li>
-                <li>Ryoteck Restorations</li>
+                <li>Ryotek Corporation</li>
+                <li>Ryotek Restorations</li>
                 <li>Fatsquacth Gaming</li>
                 <li>Gregador the Only</li>
             </ol>
