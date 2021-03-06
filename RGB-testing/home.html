@@ -7,8 +7,15 @@
     <title>RGB select</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body id="body" style="background: rgb(126, 126, 126);">
+    <div class="center">
+        <input type="range" name="red" id="red" min="0" max="255" class="rgb slider" onchange="Red()">
+        <p id="rtxt">red 126</p>
+        <input type="range" name="green" id="green" min="0" max="255" class="rgb slider" onchange="Green()">
+        <p id="gtxt">green 126</p>
+        <input type="range" name="blue" id="blue" min="0" max="255" class="rgb slider" onchange="Blue()">
+        <p id="btxt">blue 126</p>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
