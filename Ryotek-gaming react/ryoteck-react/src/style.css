@@ -10,7 +10,7 @@ header{
     background: black;
 }
 
-nav{
+ol{
     display: grid;
     grid-template-columns: auto auto auto auto;
     text-align: center;
