@@ -62,23 +62,23 @@ function binary(decimal) {
 
 function addUp(num) {
 	return (num*(num +1))/2
+	// Test.assertEquals(addUp(4), 10)
+	// Test.assertEquals(addUp(13), 91)
+	// Test.assertEquals(addUp(600), 180300)
+	// Test.assertEquals(addUp(392), 77028)
+	// Test.assertEquals(addUp(53), 1431)
+	// Test.assertEquals(addUp(897), 402753)
+	// Test.assertEquals(addUp(23), 276)
+	// Test.assertEquals(addUp(1000), 500500)
+	// Test.assertEquals(addUp(738), 272691)
+	// Test.assertEquals(addUp(100), 5050)
+	// Test.assertEquals(addUp(925), 428275)
+	// Test.assertEquals(addUp(1), 1)
+	// Test.assertEquals(addUp(999), 499500)
+	// Test.assertEquals(addUp(175), 15400)
+	// Test.assertEquals(addUp(111), 6216)
 }
 
-Test.assertEquals(addUp(4), 10)
-Test.assertEquals(addUp(13), 91)
-Test.assertEquals(addUp(600), 180300)
-Test.assertEquals(addUp(392), 77028)
-Test.assertEquals(addUp(53), 1431)
-Test.assertEquals(addUp(897), 402753)
-Test.assertEquals(addUp(23), 276)
-Test.assertEquals(addUp(1000), 500500)
-Test.assertEquals(addUp(738), 272691)
-Test.assertEquals(addUp(100), 5050)
-Test.assertEquals(addUp(925), 428275)
-Test.assertEquals(addUp(1), 1)
-Test.assertEquals(addUp(999), 499500)
-Test.assertEquals(addUp(175), 15400)
-Test.assertEquals(addUp(111), 6216)
 
 //Are the Numbers Equal?
 
@@ -87,22 +87,22 @@ function isSameNum(num1, num2) {
 		return true
 	}
 	return false
+	// Test.assertEquals(isSameNum(4, 8), false)
+	// Test.assertEquals(isSameNum(2, 2), true)
+	// Test.assertEquals(isSameNum(0, 6), false)
+	// Test.assertEquals(isSameNum(2, "2"), false)
 }
 
-Test.assertEquals(isSameNum(4, 8), false)
-Test.assertEquals(isSameNum(2, 2), true)
-Test.assertEquals(isSameNum(0, 6), false)
-Test.assertEquals(isSameNum(2, "2"), false)
 
 //Convert Hours and Minutes into Seconds
 
 function convert(hours, minutes) {
 	return (hours*3600)+(minutes*60)
+	// Test.assertEquals(convert(1, 0), 3600)
+	// Test.assertEquals(convert(1, 3), 3780)
+	// Test.assertEquals(convert(0, 30), 1800)
 }
 
-Test.assertEquals(convert(1, 0), 3600)
-Test.assertEquals(convert(1, 3), 3780)
-Test.assertEquals(convert(0, 30), 1800)
 
 //Less Than 100?
 
@@ -110,28 +110,28 @@ function lessThan100(a, b) {
 	if((a+b)<100){
 		return true
 	} return false
+	// Test.assertEquals(lessThan100(5, 57), true)
+	// Test.assertEquals(lessThan100(77, 30), false)
+	// Test.assertEquals(lessThan100(0, 59), true)
+	// Test.assertEquals(lessThan100(78, 35), false)
+	// Test.assertEquals(lessThan100(63, 11), true)
+	// Test.assertEquals(lessThan100(37, 99), false)
+	// Test.assertEquals(lessThan100(52, 11), true)
+	// Test.assertEquals(lessThan100(82, 95), false)
+	// Test.assertEquals(lessThan100(17, 44), true)
+	// Test.assertEquals(lessThan100(74, 53), false)
+	// Test.assertEquals(lessThan100(3, 77), true)
+	// Test.assertEquals(lessThan100(25, 80), false)
+	// Test.assertEquals(lessThan100(59, 28), true)
+	// Test.assertEquals(lessThan100(69, 87), false)
+	// Test.assertEquals(lessThan100(10, 45), true)
+	// Test.assertEquals(lessThan100(43, 58), false)
+	// Test.assertEquals(lessThan100(50, 44), true)
+	// Test.assertEquals(lessThan100(74, 89), false)
+	// Test.assertEquals(lessThan100(3, 27), true)
+	// Test.assertEquals(lessThan100(21, 79), false)
 }
 
-Test.assertEquals(lessThan100(5, 57), true)
-Test.assertEquals(lessThan100(77, 30), false)
-Test.assertEquals(lessThan100(0, 59), true)
-Test.assertEquals(lessThan100(78, 35), false)
-Test.assertEquals(lessThan100(63, 11), true)
-Test.assertEquals(lessThan100(37, 99), false)
-Test.assertEquals(lessThan100(52, 11), true)
-Test.assertEquals(lessThan100(82, 95), false)
-Test.assertEquals(lessThan100(17, 44), true)
-Test.assertEquals(lessThan100(74, 53), false)
-Test.assertEquals(lessThan100(3, 77), true)
-Test.assertEquals(lessThan100(25, 80), false)
-Test.assertEquals(lessThan100(59, 28), true)
-Test.assertEquals(lessThan100(69, 87), false)
-Test.assertEquals(lessThan100(10, 45), true)
-Test.assertEquals(lessThan100(43, 58), false)
-Test.assertEquals(lessThan100(50, 44), true)
-Test.assertEquals(lessThan100(74, 89), false)
-Test.assertEquals(lessThan100(3, 27), true)
-Test.assertEquals(lessThan100(21, 79), false)
 
 //ES6: Destructuring Arrays IV
 
