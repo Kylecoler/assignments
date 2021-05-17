@@ -1,6 +1,7 @@
 body{
     text-align: center;
-    background: url(http://eskipaper.com/images/background-patterns-11.jpg) black
+    background: url(http://eskipaper.com/images/background-patterns-11.jpg) black;
+    color:white;
 }
 
 h1{
@@ -20,8 +21,6 @@ h1{
     position: absolute;
     line-height: 200pt;
     width:100%;
-    color:white;
-    text-decoration: none;
 }
 
 .cube{
