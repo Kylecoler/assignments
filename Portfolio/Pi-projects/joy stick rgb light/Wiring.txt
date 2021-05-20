@@ -1,0 +1,21 @@
+Joy Stick RGB-LED
+
+ADCS7830
+
+Pi SDA1 to ADC SDA
+Pi SCL1 to ADC SCL
+Pi PGIO17 to 220 ohm Resistor to RGB LED Red Pin
+Pi PGIO27 to 220 ohm Resistor to RGB LED Green Pin
+Pi PGIO22 to 220 ohm Resistor to RGB LED Blue Pin
+Pi 3.3v for power
+ADC VCC TO 3.3v
+Joy L GND to Pi GND
+Joy L +5 to 3.3v
+Joy L VRX to ADC A1
+Joy L VRY to ADC A0
+Joy L SW to Pi GPIO23 to 10k ohm Resistor to 3.3v
+Joy R GND to Pi GND
+Joy R +5 to 3.3v
+Joy R VRX to ADC A2
+Joy R VRY to ADC A3
+Joy R SW to Pi GPIO18 to 10k ohm Resistor to 3.3v
