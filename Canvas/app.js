@@ -15,6 +15,15 @@ const p2 = {
     color:"#000000",
     ai:true
 }
+const ball = {
+    midX:360,
+    midY:180,
+    radius:20,
+    angleStart:0,
+    angleEnd:2*Math.PI,
+    color:'#000000'
+}
+let score = 0
 const newRect = function(startX,startY,width,heigth,filled,color){
     ctx.beginPath()
     if(color){ctx.fillStyle = color}else{ctx.fillStyle = "#ff0000"} 
@@ -46,4 +55,8 @@ const move = function(dirtion){
         p1.startY += 10
     }
     render()
+}
+
+const bllMve = function(){
+    if(false){}
 }
