@@ -1,18 +1,54 @@
 let sValue = ''
+let result = []
 
-upDateScreen = function(value){
-    sValue = sValue.concat(value)
-    document.getElementById("screen").innerHTML = sValue
-}
-solve = function(){
-    computeFun = function(num){
-        if(num == Number(num)){return Number(num)}
-        else {return num}
+const cumput = function(operate){
+    if(result.length<3){
+        return
     }
-    let arr1 = sValue.split('')
-    console.log(arr1)
-    arr1 = arr1.map(computeFun)
-    console.log(arr1)
-    sValue = ''
-    document.getElementById("screen").innerHTML = sValue
+    else{
+        let temp = 0
+        switch(result[1]){
+            case '+':
+                temp = result[0] + result[2]
+                result.splice(0,3,temp)
+                console.log(result)
+            break;
+            case '-':
+                temp = result[0] - result[2]
+                result.splice(0,3,temp)
+                console.log(result)
+            break;
+            case '*':
+                temp = result[0] * result[2]
+                result.splice(0,3,temp)
+                console.log(result)
+            break;
+            case '/':
+                temp = result[0] / result[2]
+                result.splice(0,3,temp)
+                console.log(result)
+            break;
+        }
+    }
+}
+
+const upDateScreen = function(value){
+    if(value=='/'||value=='*'||value=='-'||value=='+'){
+        result.push(Number(sValue));
+        result.push(value)
+        console.log(result,result.length)
+        sValue = ''
+        cumput(value)
+    }
+    else if(value!='='){
+        sValue = sValue.concat(value)
+        document.getElementById("screen").innerHTML = sValue
+    }
+    else {
+        result.push(Number(sValue))
+        sValue = ''
+        cumput(value)
+        document.getElementById('screen').innerHTML = result
+        result = []
+    }      
 }
