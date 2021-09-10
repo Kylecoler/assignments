@@ -11,22 +11,18 @@ const cumput = function(operate){
             case '+':
                 temp = result[0] + result[2]
                 result.splice(0,3,temp)
-                console.log(result)
             break;
             case '-':
                 temp = result[0] - result[2]
                 result.splice(0,3,temp)
-                console.log(result)
             break;
             case '*':
                 temp = result[0] * result[2]
                 result.splice(0,3,temp)
-                console.log(result)
             break;
             case '/':
                 temp = result[0] / result[2]
                 result.splice(0,3,temp)
-                console.log(result)
             break;
         }
     }
@@ -36,7 +32,6 @@ const upDateScreen = function(value){
     if(value=='/'||value=='*'||value=='-'||value=='+'){
         result.push(Number(sValue));
         result.push(value)
-        console.log(result,result.length)
         sValue = ''
         cumput(value)
     }
