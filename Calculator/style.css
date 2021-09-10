@@ -15,7 +15,8 @@
     background:white;
     position: absolute;
     width: 90%;
-    transform: translateX(5%) translateY(50%);
+    height: 90%;
+    transform: translateX(5%) translateY(5%);
     text-align: right;
 }
 #bottomContain{

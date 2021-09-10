@@ -10,27 +10,27 @@
 <body>
     <div id='mainContain'>
         <div id='topContain'>
-            <p id='screen'>
+            <div id='screen'>
                 this is the screen
-            </p>
+            </div>
         </div>
         <div id='bottomContain'>
-            <button value="7" id='7'>7</button>
-            <button value='8' id='8'>8</button>
-            <button value='9' id='9'>9</button>
-            <button value='+' id='+'>+</button>
-            <button value='4' id='4'>4</button>
-            <button value='5' id='5'>5</button>
-            <button value='6' id='6'>6</button>
-            <button value='-' id='-'>-</button>
-            <button value='1' id='1'>1</button>
-            <button value='2' id='2'>2</button>
-            <button value='3' id='3'>3</button>
-            <button value='.' id='.'>.</button>
-            <button value='0' id='0'>0</button>
-            <button value='/' id='/'>/</button>
-            <button value='*' id='*'>*</button>
-            <button value='=' id='='>=</button>
+            <button value="7" id='7' onclick="upDateScreen(7)">7</button>
+            <button value='8' id='8' onclick="upDateScreen(8)">8</button>
+            <button value='9' id='9' onclick="upDateScreen(9)">9</button>
+            <button value='+' id='+' onclick="upDateScreen('+')">+</button>
+            <button value='4' id='4' onclick="upDateScreen(4)">4</button>
+            <button value='5' id='5' onclick="upDateScreen(5)">5</button>
+            <button value='6' id='6' onclick="upDateScreen(6)">6</button>
+            <button value='-' id='-' onclick="upDateScreen('-')">-</button>
+            <button value='1' id='1' onclick="upDateScreen(1)">1</button>
+            <button value='2' id='2' onclick="upDateScreen(2)">2</button>
+            <button value='3' id='3' onclick="upDateScreen(3)">3</button>
+            <button value='.' id='.' onclick="upDateScreen('.')">.</button>
+            <button value='0' id='0' onclick="upDateScreen(0)">0</button>
+            <button value='/' id='/' onclick="upDateScreen('/')">/</button>
+            <button value='*' id='*' onclick="upDateScreen('*')">*</button>
+            <button value='=' id='=' onclick="solve()">=</button>
         </div>
     </div>
 </body>
